@@ -6,14 +6,23 @@
 #define MATRIXMULT_H
 #include <iomanip>
 #include <iostream>
+#include <string>
 #include <vector>
 
 typedef std::vector<std::vector<int>> Matrix; // ROWS <cell, cell, ...>
 
 inline void printMatrix(Matrix matrix) {
+    int max = INT_MIN;
     for (const auto& row: matrix) {
         for (const int& i: row) {
-            std::cout << std::setw(4) << i;
+            if (i>max) max = i;
+        }
+        std::cout << "\n";
+    }
+
+    for (const auto& row: matrix) {
+        for (const int& i: row) {
+            std::cout << std::setw(std::to_string(max).length()+1) << i;
         }
         std::cout << "\n";
     }

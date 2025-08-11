@@ -9,4 +9,7 @@ add_executable(Algos main.cpp
         levenshtein.h
         rucksack.h
         euros.h
+        binomialkoeffizient.h
+        factorial.h
+        binarysearch.h
 )
