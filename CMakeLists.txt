@@ -12,4 +12,6 @@ add_executable(Algos main.cpp
         binomialkoeffizient.h
         factorial.h
         binarysearch.h
+        graph.h
+        quicksort.h
 )
