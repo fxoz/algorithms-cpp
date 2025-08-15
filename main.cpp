@@ -2,7 +2,7 @@
 #include <vector>
 
 #include "queue.h"
-#include "quicksort.h"
+#include "sort-quick.h"
 
 int main() {
     Queue q;

@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(Algos main.cpp
         matrixmult.h
-        felixsort.h
+        sort-felix.h
         levenshtein.h
         rucksack.h
         euros.h
@@ -13,6 +13,6 @@ add_executable(Algos main.cpp
         factorial.h
         binarysearch.h
         graph.h
-        quicksort.h
+        sort-quick.h
         queue.h
 )
