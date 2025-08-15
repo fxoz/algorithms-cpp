@@ -1,18 +1,12 @@
 #include <iostream>
 #include <vector>
 
+#include "infinite-wall.h"
 #include "queue.h"
 #include "sort-quick.h"
 
 int main() {
-    Queue q;
-    q.push(1);
-    q.push(2);
-    std::cout << "[popped:" << q.pop() << "]";
-    q.push(3);
-    std::cout << "[popped:" << q.pop() << "]";
-    q.push(4);
+    doubleAlgo();
 
-    q.print();
     return 0;
 }

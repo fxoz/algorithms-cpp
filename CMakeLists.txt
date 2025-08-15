@@ -15,4 +15,5 @@ add_executable(Algos main.cpp
         graph.h
         sort-quick.h
         queue.h
+        infinite-wall.h
 )
