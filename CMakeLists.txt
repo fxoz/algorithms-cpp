@@ -14,4 +14,5 @@ add_executable(Algos main.cpp
         binarysearch.h
         graph.h
         quicksort.h
+        queue.h
 )

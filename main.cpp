@@ -1,11 +1,18 @@
 #include <iostream>
 #include <vector>
+
+#include "queue.h"
 #include "quicksort.h"
 
 int main() {
-    //std::vector<int> arr = {23, 37, 49, 19, 38, 9, 12, 1, 4, 2, 1, 9, 19, 50};
-    std::vector<int> arr = {14, 2, 5, 21, 7, 12, 1};
+    Queue q;
+    q.push(1);
+    q.push(2);
+    std::cout << "[popped:" << q.pop() << "]";
+    q.push(3);
+    std::cout << "[popped:" << q.pop() << "]";
+    q.push(4);
 
-    quicksort(arr, 0, arr.size()-1);
+    q.print();
     return 0;
 }
